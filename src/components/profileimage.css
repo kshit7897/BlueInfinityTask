@@ -1,0 +1,51 @@
+.image-expander {
+  position: relative;
+}
+
+.image-expander__image {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6%;
+}
+
+.image-expander__image--expanded {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.image-expander__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.image-expander__close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+}
+
+.image-expander__view-button {
+  background: none;
+  border: none;
+  color: blue;
+}
